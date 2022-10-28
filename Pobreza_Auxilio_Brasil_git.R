@@ -205,7 +205,7 @@ pobreza <- data.frame()
 
 for (y in renda) {
   
-  taxa <- sum((pnad$base.familia[y] <= 193)*pnad$base.familia$PesoDom)/sum(pnad$base.familia$PesoDom)
+  taxa <- sum((pnad$base.familia[y] <= 143)*pnad$base.familia$PesoDom)/sum(pnad$base.familia$PesoDom)
   
   pobreza <- rbind(pobreza,
                    data.frame("Renda" = y,
